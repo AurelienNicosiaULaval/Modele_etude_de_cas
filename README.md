@@ -1,7 +1,4 @@
 # Étude-de-cas
-Ce repertoire propose un modèle d'étude de cas intéractive pour utiliser R dans un cours de statistiques.
-
-## Librarie requises
+Ce repertoire propose un modèle d'étude de cas intéractive pour utiliser R avec la librairie `learnr`
 
 
-## Tutoriel en R avec `learnr`
