@@ -1,0 +1,241 @@
+---
+title: "Tutoriel en R"
+output: 
+  learnr::tutorial:
+   progressive: true
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(knitr)
+```
+
+```{css, echo=FALSE}
+.box {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.box-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.box-blue {
+  background-color: #007bff;
+}
+
+.box-green {
+  background-color: #28a745;
+}
+
+.box-yellow {
+  background-color: #ffc107;
+}
+
+.box-red {
+  background-color: #dc3545;
+}
+```
+
+## Bienvenue
+
+Bienvenue dans le modèle d'étude de cas. La première section du menu `Démonstration d'exercices (à titre d'exemple)` vous permet de voir comment créer des exercices interactifs de codage. Les autres sections du menu sont des sections de référence pour votre étude de cas.
+
+Pour plus d'information sur les tutoriels avec R, voir [leanr](https://rstudio.github.io/learnr/articles/learnr.html)
+
+## Démonstration d'exercices (à titre d'exemple)
+
+### Exercice
+
+*Voici un exercice simple avec un bloc de code vide pour entrer la réponse.*
+
+Écrivez le code R nécessaire pour additionner deux plus deux :
+
+```{r deux-plus-deux, exercise=TRUE}
+
+```
+
+### Exercice avec Code
+
+*Voici un exercice avec un peu de code prérempli ainsi que `exercise.lines = 5` pour fournir un peu plus de place pour travailler.*
+
+Écrivez maintenant une fonction qui additionne deux nombres quelconques, puis appelez-la :
+
+```{r ajouter-fonction, exercise=TRUE, exercise.lines = 5}
+ajouter <- function() {
+  
+}
+```
+
+### Exercice avec Indice
+
+*Voici un exercice où le bloc est pré-évalué via l'option `exercise.eval` (pour que l'utilisateur puisse voir la sortie par défaut qu'il doit personnaliser). Nous ajoutons également un "indice" pour la solution correcte via le bloc immédiatement ci-dessous étiqueté `print-limit-hint`.*
+
+
+
+```{r limite-impression, exercise=TRUE, exercise.eval=TRUE}
+mtcars
+```
+
+```{r print-limit-hint}
+head(mtcars)
+```
+
+### Quiz
+
+*Vous pouvez inclure un nombre quelconque de questions à choix unique ou multiple comme un quiz. Utilisez la fonction `question` pour définir une question et la fonction `quiz` pour regrouper plusieurs questions ensemble.*
+
+Quelques questions pour vérifier que vous comprenez les objectifs des différents packages de base et recommandés de R :
+
+```{r quiz}
+quiz(
+  question("Quel package contient des fonctions pour installer d'autres packages R ?",
+    answer("base"),
+    answer("tools"),
+    answer("utils", correct = TRUE),
+    answer("codetools")
+  ),
+  question("Lequel des packages R listés ci-dessous est utilisé pour créer des graphiques ?",
+    answer("lattice", correct = TRUE),
+    answer("tools"),
+    answer("stats"),
+    answer("grid", correct = TRUE)
+  )
+)
+```
+
+Pour plus d'information sur le paramétrage des questions ou quizz avec R, voir [leanr](https://rstudio.github.io/learnr/articles/learnr.html)
+
+## Boites de textes
+
+Vous pouvez utiliser le code CSS dans ce fichier modèle pour créer des boites de couleurs pour mettre un peu de couleur:
+
+::: {.box .box-blue}
+::: box-title
+On le fait pour vous!
+:::
+TEXTE
+:::
+
+::: {.box .box-green}
+::: box-title
+A votre tour de jouer
+:::
+TEXTE
+:::
+
+::: {.box .box-red}
+::: box-title
+Attention
+:::
+TEXTE
+:::
+## Étude de cas
+
+### **Motivation**
+
+------------------------------------------------------------------------
+
+L'intérêt de faire l'étude de cas
+
+Rédiger et/ou mettre image/lien ici
+
+### **Questions principales**
+
+------------------------------------------------------------------------
+
+####  {.main_question_block}
+
+<b><u> Nos questions principales sont: </u></b>
+
+1.  ...
+2.  ...
+
+#### 
+
+### **Objectifs d'apprentissage**
+
+------------------------------------------------------------------------
+
+À la fin de cette étude, l'étudiant devrait connaître les méthodes et les notions suivantes:
+
+<u>**Objectifs d'apprentissage en R:**</u>
+
+1.  
+
+2.  
+
+3.  ...
+
+<u>**Objectifs d'apprentissage statistiques:**</u>
+
+1.  
+
+2.  
+
+3.  ...
+
+```{r, out.width = "20%", echo = FALSE, fig.align = "center"}
+include_graphics("https://tidyverse.tidyverse.org/logo.png")
+```
+
+------------------------------------------------------------------------
+
+Nous allons commencer par charger les packages dont nous aurons besoin :
+
+```{r}
+#exemples
+library(here)
+library(readxl)
+library(dplyr)
+```
+
+<u>**Les packages utilisés dans cette étude de cas sont les suivants:** </u>
+
+| Librairie                                                       | Utilisé dans cette étude de cas pour                 |
+|-------------------------------|----------------------------------------|
+| [`here`](https://github.com/jennybc/here_here){target="_blank"} | faciliter le chargement et la sauvegarde des données |
+| [`readxl`](https://readxl.tidyverse.org/){target="_blank"}      | importer les fichiers csv                            |
+
+La première fois que nous utiliserons une fonction, nous utiliserons l'opérateur `::` pour indiquer quel package nous utilisons.
+
+### **Contexte**
+
+------------------------------------------------------------------------
+
+### **Limites**
+
+------------------------------------------------------------------------
+
+## **Données**
+
+------------------------------------------------------------------------
+
+## **Importation des données**
+
+------------------------------------------------------------------------
+
+## **Transformation des données**
+
+------------------------------------------------------------------------
+
+## **Visualisation des données**
+
+------------------------------------------------------------------------
+
+## **Analyse de données**
+
+------------------------------------------------------------------------
+
+## **Résumé**
+
+------------------------------------------------------------------------
+
+## **Informations complémentaires**
+
+------------------------------------------------------------------------
