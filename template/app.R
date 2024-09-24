@@ -1,6 +1,10 @@
 library(shiny)
 library(learnr)
 
+if (!requireNamespace("rsconnect", quietly = TRUE)) {
+  install.packages("rsconnect")
+}
+library(rsconnect)
 # Charger le fichier RMarkdown en tant que tutoriel learnr
 tutorial_file <- "template.Rmd"
 
