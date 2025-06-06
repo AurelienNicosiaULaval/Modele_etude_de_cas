@@ -12,7 +12,6 @@ Les utilisateurs peuvent suivre le tutoriel directement dans leur navigateur et 
 
 - **template/template.Rmd** : le fichier R Markdown contenant le tutoriel. Il s'agit d'un modèle d'étude de cas que vous pouvez modifier pour présenter vos propres données.
 - **template/app.R** : petite application Shiny permettant d'héberger le tutoriel. C'est le fichier à lancer pour consulter localement le tutoriel.
-- **template/manifest.json** et le dossier `rsconnect` : fichiers utilisés lors du déploiement sur <https://www.shinyapps.io>.
 
 Le dépôt contient déjà une version publiée que vous pouvez consulter en ligne : [Tutoriel interactif sur shinyapps.io](https://aurelien-nicosia-ulaval.shinyapps.io/template_etude_de_cas/).
 
