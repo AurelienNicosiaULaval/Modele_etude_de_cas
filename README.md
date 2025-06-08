@@ -1,6 +1,6 @@
 # Modèle d'étude de cas interactif
 
-Ce dépôt fournit un exemple minimal pour créer une étude de cas interactive avec le package [`learnr`](https://rstudio.github.io/learnr/). Le but est d'offrir un canevas que vous pouvez adapter à vos propres données et questions de recherche.
+Ce dépôt fournit un canevas minimal pour créer des tutoriels interactifs avec [`learnr`](https://rstudio.github.io/learnr/). Il contient un modèle prêt à l'emploi et deux exemples complets illustrant son utilisation.
 
 ## Qu'est‑ce qu'un tutoriel *learnr* ?
 
@@ -10,12 +10,17 @@ Les utilisateurs peuvent suivre le tutoriel directement dans leur navigateur et 
 
 ## Contenu du dépôt
 
-- **template/template.Rmd** : le fichier R Markdown contenant le tutoriel. Il s'agit d'un modèle d'étude de cas que vous pouvez modifier pour présenter vos propres données.
-- **template/app.R** : petite application Shiny permettant d'héberger le tutoriel. C'est le fichier à lancer pour consulter localement le tutoriel.
-- **Exemples/Bixi** : tutoriel complet d'analyse des données de vélopartage BIXI à Montréal pour mettre en lumière les zones et périodes d'utilisation.
-- **Exemples/Evolution ggplot2** : démonstration pas à pas de la transformation d'un graphique ggplot de base en une visualisation soignée.
+- **template/** : gabarit de base contenant
+  - `template.Rmd` — le fichier R Markdown du tutoriel.
+  - `app.R` — l'application Shiny permettant de l'héberger.
+- **Exemples/Bixi/** : tutoriel complet d'analyse des données de vélopartage BIXI à Montréal.
+- **Exemples/Evolution ggplot2/** : démonstration de l'amélioration progressive d'un graphique ggplot.
 
-Le dépôt contient déjà une version publiée que vous pouvez consulter en ligne : [Tutoriel interactif sur shinyapps.io](https://aurelien-nicosia-ulaval.shinyapps.io/template_etude_de_cas/).
+## Tutoriels en ligne
+
+- [Modèle interactif publié](https://aurelien-nicosia-ulaval.shinyapps.io/template_etude_de_cas/)
+- [Exemple Bixi](https://aureliennicosia.shinyapps.io/bixi/)
+- [Exemple évolution ggplot](https://aureliennicosia.shinyapps.io/TutorielGGplot/)
 
 ## Utilisation
 
